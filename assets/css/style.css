@@ -40,7 +40,7 @@ body {
     height: 100vh;
     position: absolute;
     left: -100vw;
-    transition: .60s ;
+    transition: .40s ;
 }
 
 .menu-lateral--ativo{
@@ -77,6 +77,7 @@ body {
     left: 24px;
 }
 
+
 .menu-lateral__link--inicio::before {
     content: "\e902";
 }
@@ -86,15 +87,15 @@ body {
 }
 
 .menu-lateral__link--cursos::before {
-    content: "\e90e";
-}
-
-.menu-lateral__link--portifolio::before {
     content: "\e90f";
 }
 
+.menu-lateral__link--portifolio::before {
+    content: "\e908";
+}
+
 .menu-lateral__link--contato::before {
-    content: "\e900";
+    content: "\e903";
 }
 
 hr {
@@ -231,6 +232,14 @@ hr {
 
 @media (min-width: 500px) {
 
+    .menu-lateral {
+        width: 30vh;
+    }
+
+    .cabecalho__logo {
+        width: 80px;
+    }
+
     .principal {
         justify-content: center;
     }
@@ -247,17 +256,19 @@ hr {
     }
 
     .cartao__conteudo {
-        width: 500px;
+        width: 450px;
     }
 
     .cartao__titulo {
         line-height: 2.2rem;
         font-size: 30px;
+        text-align: center;
     }
 
     .cartao__titulo1 {
         line-height: 2.2rem;
         font-size: 30px;
+        text-align: center;
     }
 
     .cartao__botao {

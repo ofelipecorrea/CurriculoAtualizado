@@ -40,7 +40,7 @@ body {
     height: 100vh;
     position: absolute;
     left: -100vw;
-    transition: .60s ;
+    transition: .40s ;
 }
 
 .menu-lateral--ativo{
@@ -86,15 +86,15 @@ body {
 }
 
 .menu-lateral__link--cursos::before {
-    content: "\e90e";
-}
-
-.menu-lateral__link--portifolio::before {
     content: "\e90f";
 }
 
+.menu-lateral__link--portifolio::before {
+    content: "\e908";
+}
+
 .menu-lateral__link--contato::before {
-    content: "\e900";
+    content: "\e903";
 }
 
 .principal {
@@ -234,6 +234,10 @@ hr {
 
 @media (min-width: 500px) {
 
+    .menu-lateral {
+        width: 30vh;
+    }
+
     .principal {
         justify-content: center;
     }
@@ -265,7 +269,7 @@ hr {
 
     .cartao__botao {
         width: 470px;
-        margin-top: 0.9rem;
+        margin-top: 0.4rem;
         margin-bottom: 0.4rem;
     }
 }
