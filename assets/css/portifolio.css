@@ -25,16 +25,16 @@ body {
 
 .cabecalho__menu i::before {
     content: "\e904";
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .cabecalho__notificacao i::before {
     content: "\e90f";
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .cabecalho__logo {
-    width: 50px;
+    width: 90px;
 }
 
 .menu-lateral {
@@ -103,6 +103,10 @@ body {
     content: "\e903";
 }
 
+.menu-lateral__link--qualificacoes::before {
+    content: "\e900";
+}
+
 .principal {
     padding: 24px 16px;
     display: grid;
@@ -112,7 +116,7 @@ body {
 .titulo-pagina {
     display: grid;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     padding-bottom: 0.9rem;
 }
@@ -141,17 +145,19 @@ body {
 }
 
 .cartao__titulo {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     font-weight: 700;
     grid-column: span 2;
     text-align: center;
+    line-height: 1.5rem;
 }
 
 .cartao__titulo1 {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     font-weight: 700;
     grid-column: span 2;
     text-align: center;
+    line-height: 1.5rem;
 }
 
 hr {
@@ -247,7 +253,11 @@ hr {
 
 @media (min-width: 500px) {
     .menu-lateral {
-        width: 30vh;
+        width: 20vw;
+    }
+
+    .cabecalho__logo {
+        width: 110px;
     }
 
     .principal {
@@ -267,18 +277,23 @@ hr {
 
 
     .cartao__titulo {
-        line-height: 2.2rem;
-        font-size: 30px;
+        line-height: 1.5rem;
+        font-size: 20px;
     }
 
     .cartao__titulo1 {
-        line-height: 2.2rem;
-        font-size: 30px;
+        line-height: 1.5rem;
+        font-size: 20px;
     }
 
     .cartao__botao {
         width: 500px;
         margin-top: 0.9rem;
         margin-bottom: 0.4rem;
+    }
+
+    .textocartao {
+        display: flex;
+        text-align: center;
     }
 }

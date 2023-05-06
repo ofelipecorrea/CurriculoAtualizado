@@ -20,12 +20,12 @@ body {
 
 .cabecalho__menu i::before {
     content: "\e904";
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .cabecalho__notificacao i::before {
     content: "\e90f";
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .cabecalho__logo {
@@ -105,16 +105,14 @@ body {
     padding: 24px 16px;
     display: grid;
     gap: 16px;
-    justify-items: center;
 }
 
 .titulo-pagina {
     display: grid;
     justify-content: center;
-    font-size: 2.0rem;
+    font-size: 2.5rem;
     font-weight: 700;
     padding-bottom: 0.9rem;
-    text-align: center;
 }
 
 .cartao {
@@ -141,19 +139,17 @@ body {
 }
 
 .cartao__titulo {
-    font-size: 1.0rem;
+    font-size: 1.5rem;
     font-weight: 700;
     grid-column: span 2;
     text-align: center;
-    line-height: 1.5rem;
 }
 
 .cartao__titulo1 {
-    font-size: 1.0rem;
+    font-size: 1.5rem;
     font-weight: 700;
     grid-column: span 2;
     text-align: center;
-    line-height: 1.5rem;
 }
 
 hr {
@@ -240,7 +236,7 @@ hr {
       color: black;
   }
 
-@media (min-width: 500px) {
+  @media (min-width: 500px) {
 
     .menu-lateral {
         width: 20vw;
@@ -256,7 +252,14 @@ hr {
 
     .felipeimagem {
         width: 500px;
-        height: 500px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .felipeimagem1 {
+        width: 500px;
+        height: 150px;
         display: flex;
         justify-content: center;
     }
@@ -284,14 +287,7 @@ hr {
         margin-top: 0.4rem;
         margin-bottom: 0.4rem;
     }
-
-    .cabecalho__menu i::before {
-        content: "\e904";
-        font-size: 30px;
-    }
-    
-    .cabecalho__notificacao i::before {
-        content: "\e90f";
-        font-size: 30px;
+    .textocartao {
+        text-align: left;
     }
 }

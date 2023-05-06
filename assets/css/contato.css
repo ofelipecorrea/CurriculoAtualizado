@@ -25,16 +25,16 @@ body {
 
 .cabecalho__menu i::before {
     content: "\e904";
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .cabecalho__notificacao i::before {
     content: "\e90f";
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .cabecalho__logo {
-    width: 50px;
+    width: 90px;
 }
 
 .menu-lateral {
@@ -102,8 +102,12 @@ body {
     content: "\e903";
 }
 
+.menu-lateral__link--qualificacoes::before {
+    content: "\e900";
+}
+
 .principal {
-    padding: 24px 16px;
+    padding: 24px 0px;
     display: grid;
     flex-wrap: wrap;
     justify-items: center;
@@ -299,7 +303,11 @@ hr {
 @media (min-width: 500px) {
 
     .menu-lateral {
-        width: 30vh;
+        width: 20vw;
+    }
+
+    .cabecalho__logo {
+        width: 110px;
     }
 
     .principal {
